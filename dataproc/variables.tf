@@ -1,13 +1,17 @@
 variable "cluster_name" {
-    description = "The name of the cluster, unique within the project and zoneData"
+    type = string
+    description = "new-dataproc"
+    default = ""
 }
 
 variable "project_id" {
-    description = "The project in which the cluster will exist"
+    type = string
+    description = "gentle-complex-369717"
 }
 
 variable "region" {
-    description = "The region in which the cluster and associated nodes will be created in"
+    type = string
+    description = "asia-east1"
 }
 
 variable "network" {
